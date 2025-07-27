@@ -1,0 +1,12 @@
+.quiz {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.container {
+  flex: 1;
+  
+  display: inline-block;
+}

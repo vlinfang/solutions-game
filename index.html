@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial_scale=1.0">
+  <title>Solutions</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="ui.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/9752c90b71.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cagliostro&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- automatically beginning music -->
+  <audio src="audio.mp3" type="audio/mpeg" id="audio" controls hidden loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <img src="images/audio-unmute.png" class="audio" id="audio-img" onclick="sound();" />
+
+  <div class="title-box" id="title-box">
+    <img id="line" src="images/line.png" />
+    <h1 id="title" class="title">Welcome to SOLUTIONS</h1>
+  </div>
+
+  <p id="hide"></p>
+
+  <p class="subtitle" id="subtitle">a game of sustainability</p>
+
+  <img class="image" id="image" src=images/plant.png />
+
+
+  <!--   Start Quiz Button -->
+  <div class="start_btn"><button>Start Game</button></div>
+
+  <!--   Info Box -->
+  <div class="info_box">
+    <div class="info_title">
+      <span>Some Rules of this Game</span>
+    </div>
+    <div class="info_list">
+      <div class="info">1. You will have only <span>one chance</span> for each question.</div>
+      <div class="info">2. Once you select your answer, you can't reselect.</div>
+      <div class="info">3. You can't skip any questions.</div>
+      <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+      <div class="info">5. You'll get points on the basis of your correct answers.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Game</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+  <script src="audio.js"></script>
+  <script src="main.js"></script>
+
+  <!--   Quiz Box -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">Awesome Game Application</div>
+      <!--       <div class="timer"> //can be used in future mode
+        <div class="time_text">Time Left</div>
+        <div class="timer_sec">15</div>
+      </div> -->
+    </header>
+    <section>
+      <div class="que_text">
+        <!--         <span>What does HTML stand for?</span> -->
+      </div>
+      <div class="option_list">
+        <!--         <div class="option">
+          <span>Hyper Text Preprocessor</span>
+          <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+        </div>
+        <div class="option">
+          <span>Hyper Text Markup Language</span>
+          <div class="icon cross"><i class="fa-solid fa-times"></i></div>
+        </div>
+        <div class="option">
+          <span>Hyper Text Multiple Language</span>
+        </div>
+        <div class="option">
+          <span>Hyper Text Multi Language</span>
+        </div> -->
+      </div>
+    </section>
+
+
+    <!--     Quiz Box Footer -->
+    <footer>
+      <div class="total_que">
+        <!--         <span>
+          <p>2</p>of<p>5</p>Questions
+        </span> -->
+      </div>
+      <button class="next_btn">Next Question</button>
+    </footer>
+  </div>
+
+  <!--   Result Box -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fa-solid fa-crown"></i>
+    </div>
+    <div class="complete_text">You've completed the Game!</div>
+    <div class="score_text">
+      <span>and sorry, You got only <p>2</p> out of <p>5</p></span>
+    </div>
+    <div class="buttons">
+      <button class="restart">Replay Game</button>
+      <button class="quit">Quit Game</button>
+    </div>
+  </div>
+
+  <script src="js/questions.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
